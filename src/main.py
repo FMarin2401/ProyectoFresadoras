@@ -6,7 +6,7 @@ from evaluation import evaluar_y_graficar, calcular_intervalos_confianza, mostra
 def main():
     # 1. Pipeline de Preparación de Datos
     print("Iniciando la preparación de datos...")
-    X_train, X_test, y_train, y_test = cargar_y_preparar_datos('../data/ai4i2020.csv')
+    X_train, X_test, y_train, y_test = cargar_y_preparar_datos('data/ai4i2020.csv')
 
     # 2. Pipeline de Optimización y Entrenamiento
     best_rf, best_lr, best_svm = entrenar_pipeline_modelos(X_train, y_train)
